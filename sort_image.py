@@ -4,9 +4,9 @@ import numpy as np
 import os
 
 # Parameters
-image_folder = '/Users/junho_kim/Downloads/crossline_image'  # 이미지가 있는 폴더 경로
-output_folder = '/Users/junho_kim/Downloads/crossline_image_sorted'  # 결과 파일 저장 폴더
-corner_size = 50  # 모퉁이 크기 (픽셀)
+image_folder = '/Users/junho_kim/Downloads/line_image'  # 이미지가 있는 폴더 경로
+output_folder = '/Users/junho_kim/Downloads/line_image_sorted'  # 결과 파일 저장 폴더
+corner_size = 250  # 모퉁이 크기 (픽셀)
 
 # 이미지 파일 가져오기
 images = sorted(glob.glob(f"{image_folder}/*.png"))
