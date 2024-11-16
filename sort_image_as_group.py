@@ -4,8 +4,8 @@ import numpy as np
 import os
 
 # Parameters
-image_folder = '/Users/junho_kim/Downloads/crossline_image'  # 이미지가 있는 폴더 경로
-output_folder = '/Users/junho_kim/Downloads/crossline_image_sorted'  # 결과 파일 저장 폴더
+image_folder = '/Users/junho_kim/Downloads/Prediction_path_image'  # 이미지가 있는 폴더 경로
+output_folder = '/Users/junho_kim/Downloads/sorted_image'  # 결과 파일 저장 폴더
 corner_size = 74  # 모퉁이 크기 (픽셀)
 similarity_threshold = 30  # 유사도 임계값 (작을수록 더 엄격하게 분류)
 group_counter = 1  # 그룹 번호 초기값
