@@ -3,7 +3,7 @@ import glob
 import numpy as np
 
 # Parameters
-image_folder = '/Users/junho_kim/Downloads/Prediction_path_image1'  # Path to the folder containing images
+image_folder = '/Users/junho_kim/Downloads/Prediction_image'  # Path to the folder containing images
 video_name = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/kalman_filter/output_video_predict_30fps_smooth.avi'  # Output video file path
 frame_rate = 30  # Frames per second
 
