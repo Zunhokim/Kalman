@@ -4,8 +4,8 @@ import numpy as np
 import os
 
 # Parameters
-image_folder = '/Users/junho_kim/Downloads/crossline_image'  # 이미지가 있는 폴더 경로
-output_folder = '/Users/junho_kim/Downloads/crossline_image_green'  # 결과 파일 저장 폴더
+image_folder = '/Users/junho_kim/Downloads/Prediction_path_image'  # 이미지가 있는 폴더 경로
+output_folder = '/Users/junho_kim/Downloads/sorted_image'  # 결과 파일 저장 폴더
 green_lower = np.array([40, 50, 50])  # 초록색 하한값 (HSV)
 green_upper = np.array([80, 255, 255])  # 초록색 상한값 (HSV)
 
