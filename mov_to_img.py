@@ -3,7 +3,7 @@ import os
 
 # MP4 파일 경로와 출력 폴더 경로 설정
 video_path = "/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/Test_set/10_shape.mp4"  # 변환할 MP4 파일 경로
-output_folder = "/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/Test_imgset/10_shape_crop/"  # 프레임 저장 폴더
+output_folder = "/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/Test_imgset/crossline_crop/"  # 프레임 저장 폴더
 
 # 출력 폴더 생성
 if not os.path.exists(output_folder):
@@ -36,7 +36,7 @@ while True:
     # 프레임 자르기 (3840x2160 -> 2160x2160)
     cropped_frame = frame[start_y:end_y, start_x:end_x]
 
-    frame_filename = os.path.join(output_folder, f"10_shape_crop_{frame_count:04d}.png")
+    frame_filename = os.path.join(output_folder, f"crossline_crop_{frame_count:04d}.png")
     cv2.imwrite(frame_filename, cropped_frame)  # 프레임 저장
     print(f"{frame_filename} save complete.")
     frame_count += 1
