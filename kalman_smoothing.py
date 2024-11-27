@@ -5,9 +5,9 @@ import re
 import numpy as np
 
 # Parameters
-image_folder = '/Users/junho_kim/Downloads//BE/beeline_image'  # Path to the folder containing images
-video_name = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/kalman_filter/표면인식_직선형_8_30.avi'  # Output video file path
-frame_rate = 30  # Frames per second
+image_folder = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/Test_imgset/10_shape_crop'  # Path to the folder containing images
+video_name = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/kalman_filter/10_shape_5ml_60fps.avi'  # Output video file path
+frame_rate = 60  # Frames per second
 
 # Function to extract numeric parts of the filename for sorting
 def extract_number(filename):
@@ -42,7 +42,7 @@ for i, image in enumerate(images):
     frame = cv2.imread(image)
 
     # Apply smoothing between previous and current frame
-    for alpha in np.linspace(0, 1, 8):  # Create intermediate frames
+    for alpha in np.linspace(0, 1, 5):  # Create intermediate frames
         # Blend the images
         smoothed_frame = cv2.addWeighted(previous_frame, 1 - alpha, frame, alpha, 0)
         video.write(smoothed_frame)
