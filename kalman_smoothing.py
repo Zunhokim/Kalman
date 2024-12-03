@@ -5,8 +5,8 @@ import re
 import numpy as np
 
 # Parameters
-image_folder = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/Test_imgset/T_shape_crop'  # Path to the folder containing images
-video_name = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/kalman_filter/T_shape_crop_5ml_120fps.avi'  # Output video file path
+image_folder = '/Users/junho_kim/Downloads/Prediction_path_image_2/straight'  # Path to the folder containing images
+video_name = '/Users/junho_kim/Desktop/zunobono/2024_2학기/캡디/kalman_filter/경로생성_직선형.avi'  # Output video file path
 frame_rate = 120  # Frames per second
 
 # Function to extract numeric parts of the filename for sorting
